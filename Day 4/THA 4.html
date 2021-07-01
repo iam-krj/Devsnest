@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:blueviolet;
+        }
+         #clock{
+            display: flex;
+            height: 500px;
+            width: 500px;
+           margin-left: 450px;
+           margin-top: 60px;
+             border-radius: 50%; 
+             background-color: black;
+             display: inline-block;
+             background-position: center;
+             
+             justify-content:center;
+            align-content: center;
+            
+transition-property: all; 
+             transition-property: background-color;
+            transition-property: border-color;
+            transition-property: width; 
+            transition-property:border-radius;
+            transition-duration :2s;
+            transition-delay: 3s;
+            transition-timing-function: ease-in-out; 
+            
+
+            /* radius  */
+        }
+
+        div.sec, div.min, div.hour{
+			line-height: 45px;
+			position: relative;
+			transform-origin: bottom;
+		}
+
+
+        div.sec{
+            
+			height: 250px;
+			width: 2px;
+			position: relative;
+            top:-498px;
+            left:698px;
+            
+			background: white;
+            background-position: centre;
+			z-index: 1;
+			animation: sec_anim 60s linear infinite;
+		}
+
+        div.min{
+            
+			height: 240px;
+			width: 5px;
+			position: relative;
+            top:-882px;
+            left:698px;
+            
+			background: white;
+            background-position: centre;
+			z-index: 1;
+			animation: sec_anim 3600s linear infinite;
+		}
+
+        div.hour{
+            
+			height: 150px;
+			width: 10px;
+			position: relative;
+            top:-648px;
+            left:698px;
+            
+			background: white;
+            background-position: centre;
+			z-index: 1;
+			animation: sec_anim 216000s linear infinite;
+		}
+
+            #clock:hover{
+               background-color: aqua;
+               background-image: url("newrick.jpg");
+                border-radius:100%;
+                height: 500px;
+            width: 500px;
+                 } 
+                 @keyframes sec_anim{
+			from{transform: rotateZ(0deg);}
+			to{transform: rotateZ(360deg);}
+                 }
+
+                 @keyframes hour_anim{
+			from{transform: rotateZ(0deg);}
+			to{transform: rotateZ(360deg);}
+                 }
+                 @keyframes min_anim{
+			from{transform: rotateZ(0deg);}
+			to{transform: rotateZ(360deg);}
+                 }
+
+
+    </style>
+</head>
+<body>
+    <div id="clock"> </div>
+    <div class="sec"></div>
+    <div class="hour"></div>
+    <div class="min"></div>
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, dolorem deserunt! Eos hic ducimus quos atque commodi sapiente totam! Ducimus repellendus placeat praesentium.</p> -->
+</body>
+</html>
