@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:rgb(223, 28, 93);
+        }
+
+    
+
+
+
+div.fun {
+  width: 100px;
+  height: 100px;
+  border-radius:50%;
+  background: white;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 20%;
+  transition-property: height, width;
+  transition-duration: 4s;
+  transition-delay: 2s;
+  animation: mymove 3s infinite ;
+  animation-direction: alternate;
+  animation-name: mymove1; 
+  z-index: 2;
+  justify-content:center;
+  box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes mymove1 {
+  from{transform: scale(0);}
+   to{transform: scale(1); background-color:white;}
+  
+}
+
+
+div.fun2 {
+  width: 100px;
+  height: 100px;
+  border-radius:50% ;
+
+  background: white;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 20%;
+  transition-duration: 15s;
+  transition-delay: 8s;
+  animation: mymove 2.5s infinite 1s;
+  /* animation: mymove duration timing-function delay iteration-count direction fill-mode; */
+   animation-direction: alternate;
+  animation-name: mymove2;
+  z-index: 1;
+  justify-content:center;
+  box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.4);
+  }
+
+@keyframes mymove2 {
+  from{transform: scale(0);}
+   to{transform: scale(2); background-color:white;}
+  
+}
+
+div.fun1 {
+  width: 100px;
+  height: 100px;
+  border-radius:50%;
+  background: white;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 20%;
+      transition-property: height, width;
+ 
+  transition-duration: 10s;
+  transition-delay: 5s;
+  animation: mymove 2s infinite 2s;
+  /* animation-fill-mode: backwards; */
+  /* animation-iteration-count: infinite; */
+  animation-direction: alternate;
+  animation-name: mymove;
+  justify-content:center;
+  box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+}
+@keyframes mymove {
+   from{transform: scale(0);}
+   to{transform: scale(3); background-color:white;}
+}
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class= "fun"></div> 
+    <div class="fun1"></div> 
+    <div class="fun2"></div>
+   
+    <svg class = "button" expanded = "true" height = "100px" width = "100px"></svg>
+
+</body>
+</html>
+
+
