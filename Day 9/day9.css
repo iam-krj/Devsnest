@@ -1,0 +1,100 @@
+/* .grid{
+    width: 600px;
+    height: 600px;
+    /* background-color: red; */
+    /* margin-top: 5px;
+    display: grid;
+    grid-auto-rows: 50px;
+    grid-auto-columns: 50px;
+    grid-template: 50px/ auto auto auto auto auto auto auto auto auto;
+    grid-gap: 5px; */
+/* }
+.box:hover{
+    opacity: 0.5;
+    background-color: black;
+}
+.box. boxClicked{
+    background-color: green;
+}
+
+.box{
+    border: 3px solid rgb(182, 48, 48);
+    
+}
+ */ 
+
+
+body{
+    padding-left: 350px;
+    /* padding-top: 11px; */
+           /* text-align: right; */
+           background-image: url("https://a-static.besthdwallpaper.com/sasuke-uchiha-lightning-blade-from-naruto-shippuden-for-desktop-wallpaper-1440x900-56037_4.jpg");
+           /* background-position: center; */
+}
+/* p{
+   color:white;
+   font-family: comic sans ms;
+   font-size: 30px; 
+   text-align: center;
+} */
+h1{
+   color:pink;
+   font-family: comic sans ms;
+}
+.grid-container {
+           width: 670px;
+           height: 600px;
+           border-radius: 20px;
+           display: grid;
+           grid-auto-rows: 60px;
+           grid-auto-columns: 60px;
+           grid-template: 60px/auto auto auto auto auto auto auto auto auto auto;
+           grid-gap: 1px;
+           background-color:transparent;
+           /* background-image: url("https://images.wallpapersden.com/image/download/sasuke-uchiha_a2dtZW2UmZqaraWkpJRmbmdlrWZlbWU.jpg"); */
+           border: 3px;
+           padding: 9px;
+           
+}
+
+.grid-container > div {
+background-color:pink;
+           border-radius: 50%; 
+           width: 60px;
+           height: 60px;
+}
+.seats
+{
+text-align: center;
+font-weight: 900;
+position: relative;
+right:330px;
+top:0px;
+}
+.seats1
+{
+text-align: center;
+font-weight: 900;
+position: relative;
+left:30px;
+top:-65px;
+
+}
+#val1
+{
+text-align: center;
+font-weight: 900;
+position: relative;
+right:320px;
+top:-80px;
+
+}
+#val2
+{
+text-align: center;
+font-weight: 900;
+position: relative;
+left:50px;
+top:-145px;
+
+}
