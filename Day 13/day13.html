@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+    *{
+    padding: 0; 
+    margin: 0; 
+
+}
+
+body{
+    display: flex; 
+    font-size: 25px;
+    /* background-color: gold; */
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+        /* background-size : cover ; */
+  
+    /* height: 100vh; */
+    color: rgb(241, 161, 11);
+    text-shadow:4px 2px cornsilk;
+    justify-content: center; 
+    flex-direction: column; 
+    align-items: center; 
+    /* background-image: url("3.jpg"); */
+
+    background-size: 1600px 900px;  
+    font-family: 'Nova Square', cursive;
+}
+
+button {
+    /* background-color: #4CAF50; Green */
+    border: none;
+    /* color: white; */
+    font-family: comic sans ms;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 27px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: transparent; 
+  color: yellow; 
+  border: 2px solid #008CBA;
+    
+}
+
+button:hover {
+    background-color: #008CBA;
+  color: white;
+  scale: 1.2;
+}
+
+.col{
+    font-family: "Nova Square", cursive;
+    text-align: center;
+}
+
+.colo{
+    position: relative;
+    font-family: "Nova Square", cursive;
+    text-align: center;
+    margin-left: 45%;
+    margin-top: 150px;
+}
+
+.enterprofile{
+    width: 300px;
+    height: 47px;
+    border-radius: 5%;
+    opacity: 200%;
+    font-family: "Nova Square", cursive;
+    color: gold;
+    /* scale: 1.2; */
+    /* border: 2px solid #f8f8f8; */
+    /* box-shadow: 0 0 14px 3px rgb(46, 235, 8); */
+    /* background: rgba(19, 183, 224, 0.5); */
+    /* border: none; */
+    /* border: 2px solid #008CBA; */
+    border: none;
+    background-color: transparent;
+    font-family: comic sans ms;
+    font-size: larger;
+
+}
+
+.enterprofile:hover{
+    transition-duration: 0.4s;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+#temp{
+    margin: 0 auto;
+    font-size: 2.2em;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:4px 2px black;
+}
+#title{
+    font-size: 4em;
+    
+}
+#description{
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-shadow:4px 2px black;
+}
+#location{
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-shadow:4px 2px black;
+}
+</style>
+
+<body>
+    <div>
+        <h1 id="title">Mausam Ka Haal</h1>
+        <div class="main">     
+        <div class="col">  
+            <input type="text" class="enterprofile" placeholder="Enter city...">
+            <button class="col" onclick="weatherr();">Enter</button>
+            </div>
+            <br>
+                        <!-- <div class="profilediv">
+                    <img src="2.jpg" width="300" height="300" id="profilepic">
+                </div> -->
+                <div>
+                    <div id="description"></div>
+                    <h1 id="temp"></h1>
+                    <div id="location"></div>
+                    <!-- <button class="btn" onClick="window.location.reload();">Refresh Page</button -->
+                        <button class="colo" onClick="window.location.href=window.location.href">Refresh</button>
+                </div>
+            </div>
+         </div>   
+    </div>
+</body>
+
+
+
+
+<script>const key = 'b81251dbf378a1ac5006c18c552af915';
+    // if(key=='b81251dbf378a1ac5006c18c552af915') 
+    document.getElementById('temp').innerHTML ;
+    // var cityID= document.getElementsByClassName("enterprofile");
+    // var cityID = document.getElementsByClassName("enterprofile").value;
+    // console.log(cityID);
+    
+    function weatherr( cityID ) {
+        cityID=document.getElementsByClassName("enterprofile")[0].value;
+        console.log(document.getElementsByClassName("enterprofile")[0].value);
+    console.log(cityID);
+        fetch('https://api.openweathermap.org/data/2.5/weather?q=' + cityID+ '&appid=' + key)  
+        .then(function(resp) { return resp.json() }) 
+        .then(function(data) {
+            // console.log(cityID);
+        var celcius = Math.round(parseFloat(data.main.temp)-273.15);
+        var fahrenheit = Math.round(((parseFloat(data.main.temp)-273.15)*1.8)+32);
+        var description = data.weather[0].description; 
+        
+        document.getElementById('description').innerHTML = description;
+        document.getElementById('temp').innerHTML = celcius + '&deg C;';
+        document.getElementById('location').innerHTML = data.name;
+        })
+        .catch(function() {
+            alert("Wrong city name");
+        });
+    }
+    
+    document.querySelector(".search-bar").addEventListener('keyup', function(event){
+    if(event.key == "Enter"){
+        weatherr();}
+    });
+
+    </script>
+</html>
