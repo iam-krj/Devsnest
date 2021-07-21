@@ -14,20 +14,20 @@ ReactDOM.render(
   <Card />  
   <Chss /><Chss /><Chss /><Chss /><Chss /><Chss /><Chss /><Chss />
   {/* <br /> */}
-  <Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs />
+  <Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs />
   {/* <br /> */}
   <Chss /><Chss /><Chss /><Chss /><Chss /><Chss /><Chss /><Chss />
   {/* <br /> */}
-  <Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs />
+  <Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs />
   {/* <br /> */}
 
   <Chss /><Chss /><Chss /><Chss /><Chss /><Chss /><Chss /><Chss />
   {/* <br /> */}
-  <Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs />
+  <Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs />
   {/* <br /> */}
   <Chss /><Chss /><Chss /><Chss /><Chss /><Chss /><Chss /><Chss />
   {/* <br /> */}
-  <Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs />
+  <Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs /><Chs />
   
 
   </div>
