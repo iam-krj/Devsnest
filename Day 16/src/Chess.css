@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+.Chess{
+    height: 160px;
+    width: 160px;
+    position: relative;
+    float : left;
+}
+
 .Chs {
     display: inline-flex;
     float: left;
