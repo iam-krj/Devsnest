@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.Card {
+    border : 2px solid black;
+    padding : 10px 20px;
+    display : inline-block;
+    margin-left : 42%;
+    margin-top: 7%;
+    align-items: center;
+
+}
+
+.Card img {
+    width: 100%;
+    
+}
