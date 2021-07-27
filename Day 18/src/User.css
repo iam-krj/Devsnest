@@ -1,0 +1,40 @@
+
+
+.User{
+    font-size: 66px;
+   /* background-color: aqua */
+
+   color: rgb(233, 5, 5);
+   display: inline-block;
+    justify-content: center;
+    text-align: center;
+    border: 10px solid black;
+}
+
+body .User{
+    background-image: url("https://source.unsplash.com/1800x900/?food");
+    display: flex;
+}
+
+.Prod{
+    width: 5em;
+    height: 20%;
+    background-color: #7c717146;
+    border:3px solid rgb(0, 0, 0);
+    padding: 10px;
+    display: flex;
+    align-items:centre;
+    border-radius: 5%;
+    align-content: right;
+    color: rgb(255, 255, 255);
+    margin-top: 56px;
+    margin-left: -30%;
+  }
+  
+
+  .Title{
+    font-size: 3rem;
+    font-style: italic ;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
