@@ -1,0 +1,53 @@
+body{
+    /* background-image: url='https://images.hdqwalls.com/download/uchiha-sasuke-naruto-ix-1600x900*/
+    background-image: url('Counter.jpg');
+    display: block;
+      max-width: 100%;
+  height: auto;
+}
+
+
+.b{
+    font-family: comic sans ms;
+    width: 70px;
+    height: 70px;
+    position:relative;
+    left: 5%;
+
+    margin-right: 35px; 
+    justify-content: center;
+    opacity: 0.7;
+    border-radius: 20px;
+    color: rgb(245, 242, 248);
+    font-size: 27px;
+    font-weight: bold;
+    background-color: rgb(87, 212, 14,0.5);
+    box-shadow: 7px 7px yellow;
+}
+
+.b:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+
+.title{
+    font-size: 40px;
+    font-family: cursive;
+    color: azure;
+    margin-top: 150px;
+    text-align: center;
+    margin-left: 29%;
+    height: 180px;
+    width:550px;
+    border: 7px solid #861657;
+    
+    /* background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%); */
+    
+    opacity: 0.4;
+}
+
+.title:hover{
+    opacity:1;
+    transform: scale(1.1);
+}
