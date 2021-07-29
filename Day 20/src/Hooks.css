@@ -1,0 +1,61 @@
+.Hooks{
+
+    margin-top: 15px;
+    color: white;
+    display: flex;
+overflow: auto;
+    margin-left: 39%;
+    flex-direction: column;
+    height: 600px;
+    width: 420px;
+    border: 4px solid black;
+    display: inline-block;
+    
+
+}
+
+.Hooks button{
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    left: 300px;
+    bottom:23px;
+}
+
+.Hooks .todo{
+    display: inline-block;
+    margin: 10px;
+}
+
+.Bart {
+    background-color: #fff;
+}
+
+
+.Cardi{
+    width: 35em;
+    height: 20%;
+    background-color: #7c7c7c2b;
+    border:1px solid black;
+    /* padding: 3px; */
+
+    border-radius: 5%;
+    color: #fff;
+    margin: 5px;
+  }
+  Cardi:hover{
+    background-color: #000000d0;
+    cursor: pointer;
+  }
+
+  .Title{
+      align-items: center;
+
+  }
+
+  .todo{
+      border: 2px solid black;
+      width: 372px;
+      padding:3px;
+      /* flex-direction: ; */
+  }
