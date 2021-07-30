@@ -1,0 +1,110 @@
+.Hooks{
+
+    margin-top: 15px;
+    color: white;
+    display: flex;
+overflow: auto;
+    margin-left: 39%;
+    flex-direction: column;
+    height: 600px;
+    width: 420px;
+    border: 4px solid black;
+    display: inline-block;
+    
+
+}
+
+.Badas{
+    padding: 5px;
+    padding: 10px 30px;
+   background-color: rgb(0, 119, 255);
+   color: white;
+   font-size:20px;
+    display: row;
+    flex-direction: row;
+    position: relative;
+    left: 120px;
+    top:20px;
+    /* bottom:23px; */
+}
+
+.Hooks .todo{
+    display: inline-block;
+    margin: 10px;
+}
+
+.Bart {
+    background-color: #fff;
+}
+
+
+.Cardi{
+    width: 35em;
+    height: 20%;
+    background-color: #7c7c7c2b;
+    border:1px solid black;
+    /* padding: 3px; */
+
+    border-radius: 5%;
+    color: #fff;
+    margin: 5px;
+  }
+  Cardi:hover{
+    background-color: #000000d0;
+    cursor: pointer;
+  }
+
+  .Title{
+      align-items: center;
+
+  }
+
+  .todo{
+      /* margin-top: 599px; */
+      border: 2px solid black;
+      height: 110px;
+      width: 372px;
+      padding:3px;
+      /* padding-top: 10px; */
+      /* flex-direction: ; */
+  }
+
+  .Bada{
+      /* padding:120px; */
+      /* display: table-column; */
+      position: relative;
+      margin-left: 10px;
+  }
+
+
+  .Badass{
+    padding: 5px;
+    padding: 10px 30px;
+   background-color: rgb(196, 32, 32);
+   color: white;
+   font-size:20px;
+    display: row;
+    flex-direction: row;
+    position: relative;
+    left: 5px;
+    top:10px;
+    /* bottom:23px; */
+}
+
+
+
+
+
+.Badasss{
+    padding: 5px;
+    padding: 10px 30px;
+   background-color:  rgb(0, 119, 255);
+   color: white;
+   font-size:20px;
+    display: row;
+    flex-direction: row;
+    position: relative;
+    left: 25px;
+    top:10px;
+    /* bottom:23px; */
+}
