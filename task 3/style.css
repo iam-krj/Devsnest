@@ -1,0 +1,133 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+   
+}
+.sky{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(62, 212, 250);
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.trees{
+    height: 100vh;
+    width: 100%;
+    background-image: url(trees.png);
+    background-size: cover; 
+    position: absolute;
+    top: -144px; 
+}
+.track{
+    height: 40vh;
+    width: 800vw;
+    background-image: url(track.png);
+    background-repeat: repeat-x; 
+    position: absolute;
+    top: 77vh;
+     animation: carMove linear 13s infinite; 
+
+}
+
+.car{
+    height: 100px;
+    width: 380px;
+    background-image: url(car_body.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom:21vh;
+    
+    animation: carMove2 linear 40s ;
+    animation-direction:alternate-reverse;
+
+}
+
+
+
+
+.wheel1 img{
+    width: 77px;
+    position: relative;
+    top:42px;
+    left:42px;
+    animation: wheelRotation linear .16s infinite;
+}
+
+
+.wheel2 img{
+    width: 77px;
+    position: relative;
+    top: -39px;
+    left: 235px;
+    animation: wheelRotation linear .16s infinite;
+
+}
+
+@keyframes wheelRotation
+{
+    100%{
+        transform: rotate(60deg);
+    }
+}
+
+@keyframes carMove2
+{
+    0%{
+        transform: translateX(1080px);
+    }
+
+
+    100%{
+        transform: translateX(2px);
+    }
+}
+
+@keyframes carMove
+{
+    
+
+    100%{
+        transform: translateX(-500vw);
+    }
+}
+
+
+
+
+button {
+    width: 50px;
+    height: 20px;
+    border: 3px soldi white;
+    border-radius: 50px;
+    background: #202020;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+#stopwatch {
+    font-size: 50px;
+    position: absolute;
+    top: -350px;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+#buttons {
+    position: absolute;
+    top: -320px;
+    left: 48.4%;
+    transform: translate(-51.6%, -45%);
+}
+#buttons li {
+    display: inline;
+    padding-left: 10px;
+}
